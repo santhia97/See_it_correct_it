@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /*height and width
+
+     */
+    height: 100%;
+    width: 100%;
+
+    background-image: url();
+    background-size: cover;
+    animation: slide 10s infinite;
+
+
+    /*
+    background-position: center;
+    font-family: sans-serif;
+
+     */
+
+
+}
+
+.container{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.logo{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+
+
+.information{
+
+}
+
+.menu-bar{
+    background: rgb(0,100,0);
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style:none;
+    color: #ffffff;
+
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.active, .menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+
+.sub-menu1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu1{
+
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+
+
+}
+/*verikal*/
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffffff;
+    background: transparent;
+    border-radius:0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+/*sub menu, når du beveger musen, det kommer farge*/
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+    color: #b2ff00;
+}
+
+.mobil{
+    display: none;
+}
+
+
+
+.logo{
+
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 1240px){
+
+    .menu-bar ul li{
+        width: fit-content;
+        margin: 7px;
+        padding: 7px;
+        line-height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .menu-bar li {
+
+
+    }
+    .pc{
+        display: none;
+
+    }
+    .mobil{
+        display: inherit;
+        line-height: 60px;
+
+
+    }
+
+}

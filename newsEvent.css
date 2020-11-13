@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /*height and width
+
+     */
+    height: 100%;
+    width: 100%;
+
+    background-image: url();
+    background-size: cover;
+    animation: slide 10s infinite;
+
+
+    /*
+    background-position: center;
+    font-family: sans-serif;
+
+     */
+
+
+}
+
+.video h2{
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+.logo{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+
+
+.information{
+
+}
+
+.menu-bar{
+    background: rgb(0,100,0);
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style:none;
+    color: #ffffff;
+
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.active, .menu-bar ul li:hover {
+    background: #2bab0d;
+    border-radius: 3px;
+}
+
+
+.sub-menu1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu1{
+
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+
+
+}
+/*verikal*/
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffffff;
+    background: transparent;
+    border-radius:0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+/*sub menu, når du beveger musen, det kommer farge*/
+.menu-bar ul li:hover .sub-menu1 ul li a:hover{
+    color: #b2ff00;
+}
+.mobil{
+    display: none;
+}
+
+
+/*
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bak1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+*/
+/*
+animation-name: animate;
+animation-direction: alternate-reverse;
+animation-duration: 30s ;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-play-state:running ;
+animation-timing-function:ease-in-out ;
+
+}     */
+
+
+
+/*
+@keyframes slide {
+    0%{
+        background-image: url(bak1.jpg);
+    }
+    37%{
+        background-image: url(bak2.jpg);
+    }
+    60%{
+        background-image: url(bak3.jpg);
+    }
+    80%{
+        background-image: url(bak4.jpg);
+    }
+    100%{
+        background-image: url(bak5.jpg);
+    }
+
+
+
+}
+*/
+
+.logo{
+
+    border-radius: 20px;
+}
+
+.loginBoks{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    z-index: -1;
+}
+
+.login{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /*sirkel form*/
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginBoks p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+.loginBoks input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBoks input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent; /**/
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+
+}
+
+.loginBoks input[type="submit"] {
+    border: none;
+    outline:none;
+    height: 40px;
+    background: darkgreen; /*grønn bakgrunn for login felt*/
+    color: white;
+    font-size: 18px;
+    border-radius: 20px; /*half sirkel form på kantene*/
+
+}
+
+.loginBoks input[type=submit]:hover {
+    cursor: pointer;
+    background: #ffc107; /*gul farge når du beveger musen til login feltet*/
+    color: #000000;
+}
+
+.loginBoks a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginBoks a:hover{
+    color: #ffc107;
+}
+
+/*
+.section-top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(bak1.jpg);
+}
+
+
+ */
+
+/*innhold til degrees*/
+
+.video{
+    position: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+.kort{
+    width: 600px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: trasform 0.5s;
+
+}
+.kort1{
+    background-image: url(pic1.jpg);
+    color: white;
+}
+
+.kort2{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(pic2.jpg);
+    color: white;
+}
+
+.kort3{
+    background-image: url(pic3.jpg);
+    color: white;
+}
+.kort4{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(pic5.jpg);
+    color:white;
+}
+.kort5{
+    background-image: url(pic6.jpg);
+    color: white;
+}
+.kort6{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(pic4.jpg);
+    color: white;
+}
+
+.kort:hover{
+    transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 1240px){
+
+    .menu-bar ul li{
+        width: fit-content;
+        margin: 7px;
+        padding: 7px;
+        line-height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .menu-bar li {
+
+
+    }
+    .pc{
+        display: none;
+
+    }
+    .mobil{
+        display: inherit;
+        line-height: 60px;
+
+
+    }
+
+}
